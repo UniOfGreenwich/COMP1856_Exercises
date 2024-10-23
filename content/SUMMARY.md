@@ -28,14 +28,17 @@
 
 # Labs 
 
-- [Lab 1](Lab_10/Lab_10.md)
+- [COCOMO](COCOMO/COCOMO.md)
+   - [Intermediate COCOMO](COCOMO/Intermediate_COCOMO.md)
+   - [Detailed COCOMO](COCOMO/Detailed_COCOMO.md)
+
+- [UML](Lab_10/Lab_10.md)
    - [UML - Interaction Diagrams](UML-Interaction-Diagrams/UML-Interaction-Diagrams.md)
    - [UML - Class Diagrams](UML-Class-Diagrams/UML-Class-Diagrams.md)
    - [UML - Case Diagrams](UML-Case-Diagrams/UML-Case-Diagrams.md)
-- [Lab 2](Lab_11/Lab_11.md)
+   - [UML - Behavioural Modelling](Lab_11/Lab_11.md)
    - [UML - Activity Diagrams](UML-Activity-Diagrams/UML-Activity-Diagrams.md) 
    - [UML - State Diagrams](UML-State-Diagrams/UML-State-Diagrams.md) 
-- [Lab 3](ContinousIntegration/ContinousIntegration.md)
 
 ------
 
