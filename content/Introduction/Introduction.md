@@ -13,7 +13,7 @@ The mdBook accessed outside of blackboard and is mobile and tablet friendly. :
 </td>
 <td>
 
-![](./mdbook-qr-code.png)
+![](mdbook-qr-code.png)
 
 </td>
 </tr>
