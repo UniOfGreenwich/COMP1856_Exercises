@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
+<html lang="en" class="light" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -31,17 +31,15 @@
 
         <!-- MathJax -->
         <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
         </script>
-        <!-- Start loading toc.js asap -->
-        <script src="../toc.js"></script>
-    </head>
-    <body>
-    <div id="body-container">
+
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
@@ -63,16 +61,19 @@
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            const html = document.documentElement;
+            var html = document.querySelector('html');
             html.classList.remove('light')
             html.classList.add(theme);
-            html.classList.add("js");
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
+            var body = document.querySelector('body');
             var sidebar = null;
             var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
@@ -82,20 +83,38 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <!-- populated by js -->
-            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
-            <noscript>
-                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
-            </noscript>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
-                <div class="sidebar-resize-indicator"></div>
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="Introduction/Introduction.html">Introduction</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Quick Exercises</li><li class="chapter-item expanded "><a href="Lab_1/Lab_1.html"><strong aria-hidden="true">1.</strong> Quick Exercise 1</a></li><li class="chapter-item expanded "><a href="Lab_2/Lab_2.html"><strong aria-hidden="true">2.</strong> Quick Exercise 2</a></li><li class="chapter-item expanded "><a href="Lab_3/Lab_3.html"><strong aria-hidden="true">3.</strong> Quick Exercise 3</a></li><li class="chapter-item expanded "><a href="Lab_4/Lab_4.html"><strong aria-hidden="true">4.</strong> Quick Exercise 4</a></li><li class="chapter-item expanded "><a href="Lab_5/Lab_5.html"><strong aria-hidden="true">5.</strong> Quick Exercise 5</a></li><li class="chapter-item expanded "><a href="Lab_6/Lab_6.html"><strong aria-hidden="true">6.</strong> Quick Exercise 6</a></li><li class="chapter-item expanded "><a href="Lab_7/Lab_7.html"><strong aria-hidden="true">7.</strong> Quick Exercise 7</a></li><li class="chapter-item expanded "><a href="Lab_8/Lab_8.html"><strong aria-hidden="true">8.</strong> Quick Exercise 8</a></li><li class="chapter-item expanded "><a href="Lab_9/Lab_9.html"><strong aria-hidden="true">9.</strong> Quick Exercise 9</a></li><li class="chapter-item expanded affix "><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Labs</li><li class="chapter-item expanded "><a href="COCOMO/COCOMO.html"><strong aria-hidden="true">10.</strong> COCOMO</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="COCOMO/Intermediate_COCOMO.html"><strong aria-hidden="true">10.1.</strong> Intermediate COCOMO</a></li><li class="chapter-item expanded "><a href="COCOMO/Detailed_COCOMO.html"><strong aria-hidden="true">10.2.</strong> Detailed COCOMO</a></li></ol></li><li class="chapter-item expanded "><a href="Lab_10/Lab_10.html"><strong aria-hidden="true">11.</strong> UML</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="UML-Interaction-Diagrams/UML-Interaction-Diagrams.html"><strong aria-hidden="true">11.1.</strong> UML - Interaction Diagrams</a></li><li class="chapter-item expanded "><a href="UML-Class-Diagrams/UML-Class-Diagrams.html"><strong aria-hidden="true">11.2.</strong> UML - Class Diagrams</a></li><li class="chapter-item expanded "><a href="UML-Case-Diagrams/UML-Case-Diagrams.html"><strong aria-hidden="true">11.3.</strong> UML - Case Diagrams</a></li><li class="chapter-item expanded "><a href="Lab_11/Lab_11.html"><strong aria-hidden="true">11.4.</strong> UML - Behavioural Modelling</a></li><li class="chapter-item expanded "><a href="UML-Activity-Diagrams/UML-Activity-Diagrams.html"><strong aria-hidden="true">11.5.</strong> UML - Activity Diagrams</a></li><li class="chapter-item expanded "><a href="UML-State-Diagrams/UML-State-Diagrams.html"><strong aria-hidden="true">11.6.</strong> UML - State Diagrams</a></li></ol></li><li class="chapter-item expanded "><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">Git</li><li class="chapter-item expanded "><a href="myFirstRepository/myFirstRepository.html"><strong aria-hidden="true">12.</strong> My First Repository</a></li><li class="chapter-item expanded "><a href="BashAliases/BashAliases.html"><strong aria-hidden="true">13.</strong> Bash Aliases</a></li><li class="chapter-item expanded "><a href="BranchingModel/BranchingModel.html"><strong aria-hidden="true">14.</strong> Branching-Strategy</a></li><li class="chapter-item expanded "><a href="OneFlow/OneFlow.html"><strong aria-hidden="true">15.</strong> Git Oneflow</a></li><li class="chapter-item expanded "><a href="AntiPatterns/AntiPatterns.html"><strong aria-hidden="true">16.</strong> Anti Patterns</a></li><li class="chapter-item expanded "><a href="ContinousDeployment/ContinousDeployment.html"><strong aria-hidden="true">17.</strong> Continous Deployment</a></li><li class="chapter-item expanded "><a href="ReleaseDeployment/ReleaseDeployment.html"><strong aria-hidden="true">18.</strong> Release Deployment</a></li><li class="chapter-item expanded "><a href="Migration/Migration.html"><strong aria-hidden="true">19.</strong> Migration</a></li></ol>
             </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
@@ -110,11 +129,18 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
-                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="burgundy">Burgundy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="dracula">Dracula</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ecoFriend">EcoFriend</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="pinkrose">Pinkrose</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="space">Space</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="sustain">Sustain</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="tokyonight">Tokyonight</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
@@ -156,7 +182,8 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="migration"><a class="header" href="#migration">Migration</a></h1>
+                        <div class="content-wrap">
+                            <h1 id="migration"><a class="header" href="#migration">Migration</a></h1>
 <p>Migrating projects to the new branching strategies is a simple task outlined below.</p>
 <p><strong>Note</strong>: The process applies to <a href="release-deployment.html">release deployment</a> projects.
 Any legacy continuous deployment project simply follows the
@@ -200,6 +227,10 @@ We leverage this to make sure our core branches are safe.</p>
 <li>In the <strong>Protected branches</strong> section, configure both <code>master</code> and <code>develop</code> branches.</li>
 </ol>
 
+                        </div>
+                        <div class="sidetoc">
+                            <nav class="pagetoc"></nav>
+                        </div>
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
