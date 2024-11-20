@@ -2,7 +2,6 @@
 
 This mdBook will grow over the duration of this module with new labs/workshops and general content needed to test and increase your knowledge of software engineering. 
 
-
 <table>
 <tr>
 <td>
