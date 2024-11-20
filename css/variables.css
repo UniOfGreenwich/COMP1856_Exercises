@@ -518,8 +518,6 @@
     --bg: #000000;
     --fg: #ffffff;
     --menu-bg: var(--bg);
-    --menu-bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/space/menu_bg.png");
-    --bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/space/space_bg.png");
 
     --sidebar-bg: #1e1f1e;
     --sidebar-fg: #c8c9db;
@@ -571,8 +569,7 @@
     --bg: #c2e5cc;
     --fg: #171717;
     --menu-bg: var(--bg);
-    /* --menu-bg-img: url("http://example.com/assets/sustain/menu_bg.png");
-    --bg-img: url("https://example.com/assets/sustain/bg.png"); */
+
 
     --sidebar-bg: #2B4F4F;
     --sidebar-fg: #E0E0E0;
@@ -624,7 +621,6 @@
     --bg: #f5e9d5;
     --fg: #171717;
     --menu-bg: #f5e9d5;
-    --menu-bg-img: url("https://raw.githubusercontent.com/hari-vickey/mdbook-themes/main/assets/sustain/menu_bg.png");
 
     --sidebar-bg: #2B4F4F;
     --sidebar-fg: #E0E0E0;
