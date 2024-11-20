@@ -10,6 +10,8 @@ mathjax-support = true
 git-repository-url = "https://github.com/uniofgreenwich/COMP1856_Exercises"
 edit-url-template = "https://github.com/uniofgreenwich/COMP1856_Exercises/edit/main/{path}"
 input-404 = "404/404.md"
+additional-css = ["theme/pagetoc.css"]
+additional-js = ["theme/pagetoc.js"]
 
 [output.html.print]
 enable = false
