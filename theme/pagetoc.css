@@ -19,6 +19,8 @@
 
 @media only screen {
     main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 
