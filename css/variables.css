@@ -3,8 +3,8 @@
 
 :root {
     --sidebar-width: 300px;
-    --page-padding: 15px;
-    --content-max-width:55%; /*750px;*/
+    --page-padding: 10px;
+    --content-max-width:800px; /*750px;*/
     --menu-bar-height: 50px;
     --mono-font: "Source Code Pro", Consolas, "Ubuntu Mono", Menlo, "DejaVu Sans Mono", monospace, monospace;
     --code-font-size: 0.875em /* please adjust the ace font size accordingly in editor.js */

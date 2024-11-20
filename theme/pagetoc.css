@@ -1,10 +1,29 @@
+:root {
+    --toc-width: 18%;
+    --center-content-toc-shift: calc(-1 * var(--toc-width) / 2);
+}
+
+.nav-chapters {
+    /* adjust width of buttons that bring to the previous or the next page */
+    min-width: 40px;
+}
+
+.previous {
+    /*
+    adjust the space between the left sidebar or the left side of the screen 
+    and the button that leads to the previous page
+    */
+    margin-left: var(--page-padding);
+}
+
+
 @media only screen and (max-width:1439px) {
     .sidetoc {
         display: none;
     }
 }
 
-@media only screen and (min-width:1440px) {
+@media only screen and (min-width:1705px) {
     main {
         position: relative;
     }
@@ -21,7 +40,9 @@
         overflow: auto;
     }
     .pagetoc a {
-        border-left: 1px solid var(--sidebar-bg);
+        border-left: 2px solid var(--sidebar-bg);
+        border-right: 2px solid var(--sidebar-bg);
+        border-bottom: 1px dashed var(--icons);
         color: var(--fg) !important;
         display: block;
         padding-bottom: 5px;
@@ -29,6 +50,9 @@
         padding-left: 10px;
         text-align: left;
         text-decoration: none;
+    }
+    .pagetoc a:last-child {
+        border-bottom: 2px solid var(--sidebar-bg);
     }
     .pagetoc a:hover,
     .pagetoc a.active {
