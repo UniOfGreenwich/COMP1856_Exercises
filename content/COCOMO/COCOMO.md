@@ -108,6 +108,7 @@ The constants **a**, **b**, **c**, and **d** are based on the project type:
 | Embedded     | 3.6  | 1.20  | 2.5  | 0.32 |
 
 ------------
+------------
 
 ## Questions
 
@@ -117,7 +118,8 @@ Basic COCOMO Equation:
 \text{Effort (person-months)} = a \times (KLOC)^b
 \\]
 
-### Question 1: Small Organic Project
+~~~admonish question title='### Question 1: Small Organic Project'
+
 
 You are tasked with estimating the effort for a small **Organic** software project with an estimated size of **10 KLOC** (thousand lines of code).
 
@@ -127,30 +129,28 @@ Constants for Organic projects:
 - c = 2.5
 - d = 0.38
 
+~~~
+
 **Tasks:**
 
-1. Calculate the effort (in person-months).
-
-    <details>
-    <summary>Answer:</summary>
-
-    **Effort (in person-months):**
-    \\[\text{Effort} = 2.4 \times (10)^{1.05} \approx 25.4 \text{ person-months}\\]
-
-    </details>
-
-2. Estimate the development time (in months).
-
-   <details>
-   <summary>Answer:</summary>
-
-    **Development Time (in months):**
-    \\[\text{Development Time} = 2.5 \times (25.4)^{0.38} \approx 10.9 \text{ months}\\]
-
-    </details>
+~~~admonish success collapsible=true title='Calculate the effort (in person-months)'
 
 
-### Question 2: Medium Semi-Detached Project
+**Effort (in person-months):**
+\\[\text{Effort} = 2.4 \times (10)^{1.05} \approx 25.4 \text{ person-months}\\]
+
+~~~
+
+~~~admonish success collapsible=true title='Estimate the development time (in months)'
+
+**Development Time (in months):**
+\\[\text{Development Time} = 2.5 \times (25.4)^{0.38} \approx 10.9 \text{ months}\\]
+
+~~~
+
+------------
+
+~~~admonish question title='### Question 2: Medium Semi-Detached Project'
 
 A medium-sized **Semi-Detached** project is estimated to have **50 KLOC**. You are tasked with estimating the effort and development time.
 
@@ -160,27 +160,28 @@ Constants for Semi-Detached projects:
 - c = 2.5
 - d = 0.35
 
-### Tasks:
-1. Calculate the effort (in person-months).
-    <details>
-    <summary>Answer:</summary>
+~~~
+
+**Tasks:**
+
+~~~admonish success collapsible=true title='Calculate the effort (in person-months).'
+
 
     **Effort (in person-months):**
     \\[\text{Effort} = 3.0 \times (50)^{1.12} \approx 168.5 \text{ person-months}\\]
 
-    </details>
+~~~
 
-2. Estimate the development time (in months).
-
-    <details>
-    <summary>Answer:</summary>
+~~~admonish success collapsible=true title='Estimate the development time (in months).'
 
     **Effort (in person-months):**
     \\[\text{Development Time} = 2.5 \times (168.5)^{0.35} \approx 17.9 \text{ months}\\]
 
-    </details>
+~~~
 
-## Question 3: Large Embedded Project
+------------
+
+~~~admonish question title='### Question 3: Large Embedded Project'
 
 A large **Embedded** project is being developed, and its size is estimated at **200 KLOC**.
 
@@ -190,28 +191,30 @@ Constants for Embedded projects:
 - c = 2.5
 - d = 0.32
 
-### Tasks:
-1. Calculate the effort (in person-months).
-    
-    <details>
-    <summary>Answer:</summary>
+~~~
 
-    **Effort (in person-months):**
-    \\[\text{Effort} = 3.6 \times (200)^{1.20} \approx 1535.2 \text{ person-months}\\]
+**Tasks:**
 
-    </details>
+~~~admonish success collapsible=true title='Calculate the effort (in person-months).'
 
-2. Estimate the development time (in months).
 
-    <details>
-    <summary>Answer:</summary>
+**Effort (in person-months):**
+\\[\text{Effort} = 3.6 \times (200)^{1.20} \approx 1535.2 \text{ person-months}\\]
 
-    **Effort (in person-months):**
-    \\[\text{Development Time} = 2.5 \times (1535.2)^{0.32} \approx 33.4 \text{ months}\\]
+~~~
 
-    </details>
+~~~admonish success collapsible=true title='Estimate the development time (in months).'
 
-## Question 4: Tiny Organic Project
+
+**Effort (in person-months):**
+\\[\text{Development Time} = 2.5 \times (1535.2)^{0.32} \approx 33.4 \text{ months}\\]
+
+~~~
+
+------------
+
+
+~~~admonish question title='### Question 4: Tiny Organic Project'
 
 A tiny **Organic** project is estimated to be **2 KLOC**. Calculate the effort and development time.
 
@@ -221,28 +224,31 @@ Constants for Organic projects:
 - c = 2.5
 - d = 0.38
 
-### Tasks:
-1. Calculate the effort (in person-months).
+~~~
 
-    <details>
-    <summary>Answer:</summary>
 
-    **Effort (in person-months):**
-    \\[\text{Effort} = 2.4 \times (2)^{1.05} \approx 5.0 \text{ person-months}\\]
+**Tasks:**
 
-    </details>
+~~~admonish success collapsible=true title='Calculate the effort (in person-months).'
 
-2. Estimate the development time (in months).
 
-    <details>
-    <summary>Answer:</summary>
+**Effort (in person-months):**
+\\[\text{Effort} = 2.4 \times (2)^{1.05} \approx 5.0 \text{ person-months}\\]
 
-    **Effort (in person-months):**
-    \\[\text{Development Time} = 2.5 \times (5.0)^{0.38} \approx 6.4 \text{ months}\\]
+~~~
 
-    </details>
+~~~admonish success collapsible=true title='Estimate the development time (in months).'
 
-## Question 5: Medium-Sized Semi-Detached Project
+
+**Effort (in person-months):**
+\\[\text{Development Time} = 2.5 \times (5.0)^{0.38} \approx 6.4 \text{ months}\\]
+
+~~~
+
+------------
+
+
+~~~admonish question title='### Question 5: Medium-Sized Semi-Detached Project'
 
 A medium-sized **Semi-Detached** project is estimated at **30 KLOC**. Estimate the effort and development time.
 
@@ -252,28 +258,30 @@ Constants for Semi-Detached projects:
 - c = 2.5
 - d = 0.35
 
-### Tasks:
-1. Calculate the effort (in person-months).
+~~~
 
-    <details>
-    <summary>Answer:</summary>
+**Tasks:**
 
-    **Effort (in person-months):**
-    \\[\text{Effort} = 3.0 \times (30)^{1.12} \approx 98.2 \text{ person-months}\\]
+~~~admonish success collapsible=true title='Calculate the effort (in person-months).'
 
-    </details>
 
-2. Estimate the development time (in months).
 
-    <details>
-    <summary>Answer:</summary>
+**Effort (in person-months):**
+\\[\text{Effort} = 3.0 \times (30)^{1.12} \approx 98.2 \text{ person-months}\\]
 
-    **Effort (in person-months):**
-    \\[\text{Development Time} = 2.5 \times (98.2)^{0.35} \approx 14.7 \text{ months}\\]
+~~~
 
-    </details>
+~~~admonish success collapsible=true title='Estimate the development time (in months).'
 
-## Question 6: Large Embedded Project
+
+**Effort (in person-months):**
+\\[\text{Development Time} = 2.5 \times (98.2)^{0.35} \approx 14.7 \text{ months}\\]
+
+~~~
+
+------
+
+~~~admonish question title='### Question 6: Large Embedded Project'
 
 An **Embedded** project has an estimated size of **150 KLOC**. Estimate the effort and development time.
 
@@ -283,26 +291,25 @@ Constants for Embedded projects:
 - c = 2.5
 - d = 0.32
 
-### Tasks:
-1. Calculate the effort (in person-months).
+~~~
 
-    <details>
-    <summary>Answer:</summary>
 
-    **Effort (in person-months):**
-    \\[\text{Effort} = 3.6 \times (150)^{1.20} \approx 1084.7 \text{ person-months}\\]
+**Tasks:**
 
-    </details>
+~~~admonish success collapsible=true title='Calculate the effort (in person-months).'
 
-2. Estimate the development time (in months).
 
-    <details>
-    <summary>Answer:</summary>
+**Effort (in person-months):**
+\\[\text{Effort} = 3.6 \times (150)^{1.20} \approx 1084.7 \text{ person-months}\\]
 
-    **Effort (in person-months):**
+~~~
+
+~~~admonish success collapsible=true title='Estimate the development time (in months).'
+
+**Effort (in person-months):**
 \\[\text{Development Time} = 2.5 \times (1084.7)^{0.32} \approx 30.1 \text{ months}\\]
 
-    </details>
+~~~
 
 ----
 

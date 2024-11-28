@@ -1,7 +1,6 @@
 # Quick Exercise 7:  Requirements Engineering
 
-<details>
-<summary>What are user requirements and system requirements?</summary>
+~~~admonish question collapsible=true title='What are user requirements and system requirements?'
 
 <p></p>
 
@@ -9,24 +8,22 @@
 
 - System requirements are more detailed descriptions of the system services and constraint, written for developers of the system
 
-</details>
+~~~
 
 <p></p>
 
-<details>
-<summary>What is the distinction between functional and non-functional requirements?</summary>
+~~~admonish question collapsible=true title='What is the distinction between functional and non-functional requirements?'
 
 <p></p>
 
 - Functional requirements define what the system should do. Non-functional requirements are not directly concerned with specific system functions but specify required system properties or place constraints on the system or its development process.
 
-</details>
+~~~
 
 <p></p>
 
 
-<details>
-<summary>List 3 types of non-functional requirements</summary>
+~~~admonish question collapsible=true title='List 3 types of non-functional requirements'
 
 <p></p>
 
@@ -34,13 +31,12 @@
 - Organisational requirements, are general requirements derived from policies and procedures in the customer’s organization
 - External requirements, which cover all requirements derived from factors external to the system and its development process.
 
-</details>
+~~~
 
 <p></p>
 
 
-<details>
-<summary>What are the principal stages of the requirements engineering process?</summary>
+~~~admonish question collapsible=true title='What are the principal stages of the requirements engineering process?'
 
 <p></p>
 
@@ -49,6 +45,4 @@
 - Requirements validation;
 - Requirements management
 
-</details>
-
-
+~~~
