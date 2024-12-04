@@ -1,4 +1,4 @@
-# Lab 2 Behavioural Modelling
+# Lab 11.4 Behavioural Modelling
 
 1. Read the two sub sections 11.1 and 11.2 UML Activity and State Machine Diagrams.  Using select a textual design tool using [www.kroki.io](www.kroki.io), draw the activity and state diagrams from these two documents provided. 
 

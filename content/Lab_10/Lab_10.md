@@ -1,4 +1,4 @@
-# Lab 1
+# Lab 11
 
 1. Read through the document Use Case Diagrams provided on the course web page on moodle for this week.
 
@@ -20,9 +20,12 @@ Also do a description of each use case for the following categories: the actors 
 
 4. Remember documentation is your friend and therefore you should read the documentation when you are stuck on just want to know how to do something. 
 
->**Note:**
->> Using textual designers provides a quick way to design diagrams.
->>
->> look at [https://kroki.io/](https://kroki.io/) which provides a unified API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag), BPMN, Bytefield, C4 (with PlantUML), Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, Pikchr, PlantUML, Structurizr, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom... and more to come
->> 
->> I have used mermaid, plantUML and Erd in the lecture.
+~~~admonish info
+
+- Using textual designers provides a quick way to design diagrams.
+
+- Look at [https://kroki.io/](https://kroki.io/) which provides a unified API with support for BlockDiag (BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag), BPMN, Bytefield, C4 (with PlantUML), Ditaa, Erd, Excalidraw, GraphViz, Mermaid, Nomnoml, Pikchr, PlantUML, Structurizr, SvgBob, UMLet, Vega, Vega-Lite, WaveDrom... and more to come
+ 
+- I have used mermaid, plantUML and Erd in the lecture.
+
+~~~
